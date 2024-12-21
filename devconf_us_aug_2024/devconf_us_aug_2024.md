@@ -55,7 +55,7 @@ The second day began with a keynote by [Jen Krieger](https://x.com/mrry550?lang=
 Jen Krieger is a tech enthusiast with 25 years of experience in the open-source software space and is currently the VP of Engineering Operations at GitHub.
 
 Jen spoke about AI and its impact on how we work. AI has existed for some time, but recent advancements have brought its usage to a broader audience.
-Jen highlights the fact that we have a conflicted relationship with **change**. We need to remain open to evaluating the new tools introduced by the 
+Jen highlighted the fact that we have a conflicted relationship with **change**. We need to remain open to evaluating the new tools introduced by the 
 current AI movement and embrace them to improve our productivity when they prove useful. Technology can be both a benefit to our personal lives and 
 a potential threat to our jobs. The current AI trend is similar to past groundbreaking technologies. We need to be mindful of the **social changes** 
 brought about by technology and adopt a **systems thinking** approach to its implementation.
@@ -64,11 +64,11 @@ Some technology professions cannot fully automate their tasks. For instance, **p
 This can create bottlenecks in delivering enterprise software, potentially leading to unsatisfied customers and lost revenue.
 AI tools can assist **product managers** by analyzing large datasets, automating workflows, and enhancing decision-making capabilities.
 
-Jen highlights the importance of engineering and business teams collaborating to understand each other's processes and agreeing on shared workflows to streamline software delivery.
+Jen highlighted the importance of engineering and business teams collaborating to understand each other's processes and agreeing on shared workflows to streamline software delivery.
 Some companies have achieved a change lead time of less than one day. High-performing teams are often the result of investments in development processes. 
 Agile practices, DevOps transformations, and Cloud-Native development are a few examples of processes that help streamline the software development lifecycle.
 
-Finally Jen emphasizes that companies need to empower teams and invest in upskilling. 
+Finally Jen emphasizeed that companies need to empower teams and invest in upskilling. 
 
 
 ## Talks
@@ -82,14 +82,14 @@ Finally Jen emphasizes that companies need to empower teams and invest in upskil
 - Backups are easy, but recovery can be challenging. It is crucial to perform practical scenarios to ensure that the backup/recovery process works as intended.
 - SRE and platform engineering efforts can be more complex than anticipated. 
   Live clusters may require 24/7 infrastructure support, monitoring, and observability. Training SREs and platform engineers on the product can take several months.
-- Penetration testing can help identify obvious vulnerabilities before going live.
+- Penetration testing can help identify obvious vulnerabilities before a system goes live.
 - Onboarding teams to new technology takes time. Providing good documentation and code examples can significantly improve the onboarding process.
 
-This talk show the security risk that can happen during the process of delivery a solution to client.
+This talk highlights the security risks that can occur during the process of delivering a solution to client. 
+It tells the story of how Red Hat built [Konflux](https://konflux-ci.dev/).
+Konflux help developer builds a secure software supply chain process. It is a spin off of a Entreprise solution developed at Red Hat.
 
-The talk tells the story of the building of [Konflux](https://konflux-ci.dev/) by Red Hat. Konflux help developer builds a secure software supply chain process. It is a spin off of a Entreprise solution devolped at Red Hat.
-
-Ann Marie Fred talk about the challenges encouters during the devolpment of Konflux Enterprise version. 
+Ann Marie Fred discussed the challenges encountered during the development of the Konflux Enterprise version. 
 
 ### [Zero-instrumentation observability based on eBPF](https://youtu.be/xDrygKuR1ZM)
 
@@ -102,8 +102,8 @@ Ann Marie Fred talk about the challenges encouters during the devolpment of Konf
 Peter Zaitsev presents the use of various observability signals, including logs, metrics, traces, and profiling. 
 He explains the purpose of each signal and how they contribute to system observability.
 
-[eBPF](https://ebpf.io/) allow to get visibility into many Linux kernels events. 
-The talk explains how [eBPF](https://ebpf.io/) programs can be used to have observability without modifying a program's codebase. 
+[eBPF](https://ebpf.io/) allows visibility into many Linux kernels events. 
+The talk explains how [eBPF](https://ebpf.io/) programs can be used to achieve observability without modifying a program's codebase. 
 
 [Caroot](https://github.com/coroot/coroot) is a open source tool that can help add observability to a program.
 
@@ -115,19 +115,18 @@ The talk explains how [eBPF](https://ebpf.io/) programs can be used to have obse
 
 Andrew Block presents the container runtime specification and explains the different components of a container image.
 
-An OCI image consists of an image manifest, an optional image index, a set of filesystem layers, and a configuration. A container is a running instance of this image. Deep down, containers are files and processes.
-
+An OCI image consists of an image manifest, an optional image index, a set of filesystem layers, and a configuration. 
+A container is a running instance of this image. Deep down, containers are files and processes. 
 The OCI image manifest defines the media type for the image and its layers.
 
 OCI supports storing arbitrary content types called **artifacts**, enabling the storage and serving of content types other than container images.
-
 OCI Artifacts can store:
 - Software Bill Of Materials (SBOM)
 - Signatures
 - Software packages (.jar,rpm)
 - AI/ML models
 
-The benefict of OCI Artifacts :
+Beneficts of OCI Artifacts :
 - Standardized format and packaging: Various types of content can be stored in a standardized manner, and software lifecycle best practices applied to OCI images can also be used.
 - Centralized management: OCI artifacts can be managed in the same container registries as OCI images.
 - Reuse of existing tools: The same container management tools used for images can be reused.
